@@ -5,7 +5,7 @@
         <div class="card">
           <div class="card-block">
             <h4 class="card-title">Your Account</h4>
-            <p class="card-text"><%= current_user.email %></p>
+            <p class="card-text"><%= current_user.username %></p>
           </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
 
             <% @tweets.each do |tweet| %>
              <li class="list-group-item">
-              <h5 class="list-group-item-heading"><%= tweet.user.email %></h5>
+              <h5 class="list-group-item-heading"><%= tweet.user.username %></h5>
               <p class="list-group-item-text"><%= tweet.content %></p>
               <p class="list-group-item-text">
                 <%= link_to 'Show', tweet %>
